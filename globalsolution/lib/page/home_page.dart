@@ -1,4 +1,5 @@
 import 'package:app022/page/empresa_page.dart';
+import 'package:app022/page/info_page.dart';
 import 'package:app022/page/ranking_page.dart';
 import 'package:flutter/material.dart';
 
@@ -30,8 +31,9 @@ class _HomePageState extends State<HomePage> {
       body: PageView(
         controller: pc,
         children: [
-          EmpresaListView(),
+          MainPage(),
           RankingAgricultor(),
+          EmpresaListView(),
         ],
         onPageChanged: setPaginaAtual,
       ),
