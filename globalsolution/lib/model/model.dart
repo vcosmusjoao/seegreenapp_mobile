@@ -1,12 +1,8 @@
 import 'package:http/http.dart' as http;
 
-// A URL da API
 const empresaUrl = "http://localhost:8000/api/empresas";
 const agricultoresUrl = "http://localhost:8000/api/agricultores";
 
-// Criamos a classe da nossa API. O nome você que escolhe. Fazemos aqui
-// uma requisição get (como fizemos no react) e passamos a URL, mas usamos
-// um Uri.parse pra transformar a string em uma URI.
 class API {
   static Future getAllEmpresas() async {
     var url = empresaUrl;
@@ -19,8 +15,6 @@ class API {
   }
 }
 
-// Criamos uma classe para representar os objetos que vão conter os filmes
-// e colocamos só os campos que vamos usar.
 class Empresa {
   late int id;
   late String nome;

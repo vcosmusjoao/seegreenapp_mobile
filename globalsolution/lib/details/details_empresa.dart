@@ -1,10 +1,9 @@
 import 'package:app022/model/model.dart';
+import 'package:app022/page/agricultores_page.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 
-// Uma página para mostrar os detalhes de cada filme. Passamos o objeto
-// do filme como parâmetro no constructor
 class DetailPage extends StatelessWidget {
   final Empresa empresa;
   final _avaliacao = TextEditingController();
@@ -52,6 +51,7 @@ class DetailPage extends StatelessWidget {
                   onPressed: () {},
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
+                    // ignore: prefer_const_literals_to_create_immutables
                     children: [
                       Icon(Icons.check),
                       Padding(
@@ -68,14 +68,14 @@ class DetailPage extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      // ignore: unnecessary_new
-                      new MaterialPageRoute(
-                        builder: (context) => Agricultores(),
+                      MaterialPageRoute(
+                        builder: (context) => AgricultoresListView(),
                       ),
                     );
                   },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
+                    // ignore: prefer_const_literals_to_create_immutables
                     children: [
                       Icon(Icons.check),
                       Padding(

@@ -3,13 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 
-// Uma página para mostrar os detalhes de cada filme. Passamos o objeto
-// do filme como parâmetro no constructor
-class DetailPage extends StatelessWidget {
+class DetailPageAgricultor extends StatelessWidget {
   final Agricultores agricultores;
   final _avaliacao = TextEditingController();
 
-  DetailPage(this.agricultores);
+  DetailPageAgricultor(this.agricultores);
 
   @override
   Widget build(BuildContext context) {
