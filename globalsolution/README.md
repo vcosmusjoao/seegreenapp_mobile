@@ -1,4 +1,4 @@
-# app022
+# Global Solution
 
 A new Flutter project.
 
